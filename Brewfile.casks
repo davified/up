@@ -1,16 +1,6 @@
 # vim: ft=ruby
 
 cask 'docker'
-cask 'dropbox'
 cask 'firefox'
-cask 'google-backup-and-sync'
-cask 'google-chrome'
-cask 'hammerspoon'
 cask 'java'
-
-tap 'homebrew/cask-fonts'
-cask 'font-fira-mono'
-cask 'font-inconsolata'
-cask 'font-source-code-pro'
-cask 'font-source-sans-pro'
-cask 'font-source-serif-pro'
+cask 'spectacle'

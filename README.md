@@ -30,3 +30,25 @@ For work computers, run `./up.work` (it runs `up` and then some more commands)
 - [ ] Setup MDM
 - [ ] Sync Google Drive Backups
 - [ ] Setup IntelliJ license and settings
+
+## Oh my zsh
+
+```sh
+sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+```
+
+https://ohmyz.sh/
+
+## Git config
+
+git config --global user.name "YOUR_GIT_USERNAME" 
+git config --global user.email "YOUR_GIT_EMAIL" 
+git config --global push.default simple 
+git config --global credential.helper cache 
+git config --global core.autocrlf input 
+git config --global pull.rebase true 
+git config --global rebase.autoStash true 
+
+## iTerm2 config
+
+https://medium.com/@jonnyhaynes/jump-forwards-backwards-and-delete-a-word-in-iterm2-on-mac-os-43821511f0a

@@ -19,25 +19,25 @@ brew doctor || exit $?
 brew bundle -v
 
 # Make fish the default shell
-if ! grep fish /etc/shells; then
-	echo '/usr/local/bin/fish' | sudo tee -a /etc/shells
-fi
+# if ! grep fish /etc/shells; then
+# 	echo '/usr/local/bin/fish' | sudo tee -a /etc/shells
+# fi
 
-finger $USER | grep fish || chsh -s /usr/local/bin/fish
+# finger $USER | grep fish || chsh -s /usr/local/bin/fish
 
 # Install dotfiles
-[ -d ~/.files ] || git clone https://github.com/spinningarrow/.files ~/.files
+# [ -d ~/.files ] || git clone https://github.com/spinningarrow/.files ~/.files
 
 # Create fish config directories to prevent stow from taking over .config
-mkdir -p ~/.config/fish/functions
+# mkdir -p ~/.config/fish/functions
 
 # For custom scripts to be availabe in $PATH
-[ -d ~/bin ] || mkdir ~/bin
+# [ -d ~/bin ] || mkdir ~/bin
 
 # Install dotfiles
-pushd ~/.files
-ls -d */ | xargs stow
-popd
+# pushd ~/.files
+# ls -d */ | xargs stow
+# popd
 
 # Install GUI tools and fonts
 brew bundle -v --file=Brewfile.casks

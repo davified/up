@@ -1,4 +1,4 @@
 # vim: ft=ruby
 
+cask 'pycharm-ce'
 cask 'intellij-idea'
-cask 'zoom'
